@@ -1,7 +1,8 @@
 import selectedTicketReducer from './../../src/reducers/selected-ticket-reducer';
-import c from './../../src/constants';
+import constants from './../../src/constants';
+const { c } = constants;
 
-describe("selectedTicketReducer", () => {
+describe('selectedTicketReducer', () => {
 
   test('Should return default state if no action type is recognized', () => {
     expect(selectedTicketReducer({}, { type: null })).toEqual({});
